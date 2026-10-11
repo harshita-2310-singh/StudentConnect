@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile - StudentConnect</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body data-protected="true">
+  <nav>
+    <h1>StudentConnect</h1>
+    <div>
+      <a href="/">Marketplace</a>
+      <a href="/post-item">Post Item</a>
+      <a href="/profile">Profile</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>My Profile</h2>
+      <p>Email: <span id="profileEmail"></span></p>
+      <form id="profileForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="collegeId" placeholder="College ID" required>
+        <button type="submit">Update Profile</button>
+      </form>
+      <p id="message"></p>
+    </div>
+
+    <h2>My Listings</h2>
+    <div id="myItems" class="grid"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
